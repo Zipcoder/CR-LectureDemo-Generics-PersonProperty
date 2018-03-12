@@ -13,7 +13,7 @@ public class PersonPropertyTest {
     public void testInteger() {
         // Given
         Integer expected = Integer.MAX_VALUE;
-        PersonProperty<Integer> personProperty = new PersonProperty<>(expected);
+        Container<Integer> personProperty = new Container<>(expected);
 
         // When
         Integer actual = personProperty.getValue();
@@ -27,7 +27,7 @@ public class PersonPropertyTest {
     public void testString() {
         // Given
         String expected = "_";
-        PersonProperty<String> personProperty = new PersonProperty<>(expected);
+        Container<String> personProperty = new Container<>(expected);
 
         // When
         String actual = personProperty.getValue();
@@ -41,7 +41,7 @@ public class PersonPropertyTest {
     public void testDate() {
         // Given
         Date expected = new Date(System.currentTimeMillis());
-        PersonProperty<Date> personProperty = new PersonProperty<>(expected);
+        Container<Date> personProperty = new Container<>(expected);
 
         // When
         Date actual = personProperty.getValue();

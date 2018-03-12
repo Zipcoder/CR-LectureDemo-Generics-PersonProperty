@@ -3,10 +3,10 @@ package com.zipcodewilmington.person.generic;
 /**
  * Created by leon on 3/8/18.
  */
-public class PersonProperty<E> {
+public class Container<E> {
     private E value;
 
-    public PersonProperty(E value) {
+    public Container(E value) {
         this.value = value;
     }
 
@@ -17,4 +17,6 @@ public class PersonProperty<E> {
     public void setValue(E value) {
         this.value = value;
     }
+
+
 }

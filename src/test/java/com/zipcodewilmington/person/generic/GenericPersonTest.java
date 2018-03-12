@@ -27,7 +27,7 @@ public class GenericPersonTest {
     }
     @Test
     public void testName() {
-        String actual = this.genericPerson.name.getValue();
+        String actual = genericPerson.name.getValue();
         Assert.assertEquals(expectedName, actual);
     }
 
